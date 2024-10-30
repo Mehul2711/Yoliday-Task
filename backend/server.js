@@ -8,7 +8,11 @@ const PORT = 5001;
 app.use(express.static("public"));
 
 app.use(cors());
-
+app.use(
+  cors({
+    origin: "https://yoliday-task.vercel.app",
+  })
+);
 app.get("/api/project", (req, res) => {
   res.json(data.project);
 });
