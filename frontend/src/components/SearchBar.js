@@ -5,7 +5,7 @@ function SearchBar({ handleSearch }) {
     <input
       type="text"
       placeholder="Search..."
-      onChange={(e) => handleSearch(e.target.value)} // Call handleSearch on input change
+      onChange={(e) => handleSearch(e.target.value)}
       className="w-[400px] border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-400"
     />
   );

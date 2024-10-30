@@ -5,7 +5,7 @@ function Card({ project, onAddToCart }) {
     <div className="bg-white  flex flex-row gap-5 p-5   rounded shadow-2xl">
       <div className="">
         <img
-          src={project.image} // Add a default image path
+          src={project.image}
           alt={project.title}
           className="w-full h-full object-cover"
         />

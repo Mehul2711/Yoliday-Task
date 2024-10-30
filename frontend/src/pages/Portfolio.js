@@ -83,10 +83,8 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Card List */}
       <div className="flex flex-col gap-4 mb-20 sm:w-[50%]">
         {" "}
-        {/* Added margin-bottom to make room for navbar */}
         {filteredData.length > 0 ? (
           filteredData.map((item) => (
             <Card key={item.id} project={item} onAddToCart={onAddToCart} />

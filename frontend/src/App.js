@@ -6,7 +6,6 @@ import Dashboard from "./pages/Dashboard";
 import Portfolio from "./pages/Portfolio";
 import Inputs from "./pages/Inputs";
 import Profile from "./pages/Profile";
-import SearchBar from "./components/SearchBar";
 
 function App() {
   return (

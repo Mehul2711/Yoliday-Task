@@ -9,15 +9,12 @@ function Navbar() {
 
   return (
     <div className="flex items-center justify-between bg-white shadow-md p-4">
-      {/* Left Side (Logo or title can be placed here) */}
       <h1 className="text-lg font-semibold">MyApp</h1>
 
-      {/* Right Side Icons */}
       <div className="flex items-center space-x-4">
-        {/* Bell Icon */}
         <button className="relative">
           <span className="material-icons text-gray-600 text-xl">🔔</span>
-          {/* Notification Badge (optional) */}
+
           <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
         </button>
 
