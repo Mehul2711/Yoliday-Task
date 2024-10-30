@@ -8,9 +8,11 @@ function Portfolio() {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true); // New loading state
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       try {
         let result;
         switch (section) {
@@ -33,6 +35,8 @@ function Portfolio() {
         setFilteredData(result);
       } catch (error) {
         console.error(`Error fetching ${section} data:`, error);
+      } finally {
+        setLoading(false);
       }
     };
     fetchData();
@@ -56,12 +60,12 @@ function Portfolio() {
   };
 
   return (
-    <div className=" p-4 sm:w-full  relative">
+    <div className="p-4 sm:w-full relative">
       <h1 className="text-xl font-semibold mb-4 text-center md:text-left">
         Portfolio
       </h1>
-      <div className="flex flex-col sm:flex-row  sm:w-full">
-        <div className="flex space-x-2 md:space-x-4 mb-4 border-b border-gray-300 overflow-x-auto scrollbar-hide  sm:w-96">
+      <div className="flex flex-col sm:flex-row sm:w-full">
+        <div className="flex space-x-2 md:space-x-4 mb-4 border-b border-gray-300 overflow-x-auto scrollbar-hide sm:w-96">
           {["Project", "Saved", "Shared", "Achievement"].map((sec) => (
             <button
               key={sec}
@@ -76,16 +80,17 @@ function Portfolio() {
             </button>
           ))}
         </div>
-        <div className="sm:ml-[550px] my-2 sm:my-0 ">
-          <div className="">
-            <SearchBar handleSearch={handleSearch} />
-          </div>
+        <div className="sm:ml-[550px] my-2 sm:my-0">
+          <SearchBar handleSearch={handleSearch} />
         </div>
       </div>
 
       <div className="flex flex-col gap-4 mb-20 sm:w-[50%]">
-        {" "}
-        {filteredData.length > 0 ? (
+        {loading ? (
+          <p className="text-center text-gray-500">
+            Fetching data from Render...
+          </p>
+        ) : filteredData.length > 0 ? (
           filteredData.map((item) => (
             <Card key={item.id} project={item} onAddToCart={onAddToCart} />
           ))
