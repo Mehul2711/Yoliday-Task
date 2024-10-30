@@ -7,8 +7,7 @@ const PORT = 5001;
 
 app.use(express.static("public"));
 
-// Configure CORS to allow requests from localhost:3000
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors());
 
 // Define endpoints for each tab
 app.get("/api/project", (req, res) => {
