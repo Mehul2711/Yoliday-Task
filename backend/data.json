@@ -1,0 +1,50 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "title": "Skill in Summarizing Written Content",
+      "description": "This project delves into the skillful art of summarizing written materials. Through structured practice and techniques, it aims to guide individuals in extracting the core ideas and significant points from lengthy texts. The project promotes efficiency in learning by condensing complex information into easily digestible summaries, ideal for educational and professional settings where time is of the essence.",
+      "category": "Indonesian Language (Bahasa Sunda)",
+      "author": "Al-Baaji Samaan",
+      "image": "/images/IMG_6360-3.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Proficiency in Extracting Key Points from Written Works",
+      "description": "This initiative provides tools and methodologies for enhancing one’s ability to summarize texts. It focuses on understanding content structure, identifying important information, and condensing it effectively. Such skills are beneficial for students and professionals who often need to capture essential information swiftly without losing comprehension of the topic. This project is part of a broader language enhancement curriculum.",
+      "category": "Indonesian Language (Bahasa Sunda)",
+      "author": "Al-Baaji Samaan",
+      "image": "path/to/image2.jpg"
+    }
+  ],
+  "saved": [
+    {
+      "id": 1,
+      "title": "Mastering the Art of Summarizing Texts",
+      "description": "This project offers a comprehensive approach to summarizing written texts. By employing various techniques and methods, it helps individuals grasp the main ideas and crucial details within texts, enabling them to summarize effectively. The goal is to cultivate the skills necessary to distill complex information, making it easier for others to understand the core messages within a shorter timeframe.",
+      "category": "Indonesian Language (Bahasa Sunda)",
+      "author": "Al-Baaji Samaan",
+      "image": "path/to/image2.jpg"
+    }
+  ],
+  "shared": [
+    {
+      "id": 1,
+      "title": "Enhancing Summarization Skills for Textual Content",
+      "description": "This shared resource is a project focused on developing summarization skills, particularly for texts in the Indonesian language. It covers practical exercises and strategies designed to help learners pinpoint critical information within lengthy passages. By applying these techniques, individuals can present summaries that maintain the text's original intent and substance, making it a valuable skill for academic and workplace environments.",
+      "category": "Indonesian Language (Bahasa Sunda)",
+      "author": "Al-Baaji Samaan",
+      "image": "path/to/image2.jpg"
+    }
+  ],
+  "achievement": [
+    {
+      "id": 1,
+      "title": "Proficiency in Concise Summarization of Written Materials",
+      "description": "This achievement represents a significant milestone in mastering the skill of summarizing written content. Through dedicated practice and a deep understanding of summarization principles, individuals gain the ability to condense complex narratives while retaining essential information. This skill is invaluable in both academic and professional settings, where brevity and clarity are often required for effective communication. The project emphasizes linguistic competency and efficiency in conveying ideas succinctly.",
+      "category": "Indonesian Language (Bahasa Sunda)",
+      "author": "Al-Baaji Samaan",
+      "image": "path/to/image2.jpg"
+    }
+  ]
+}
