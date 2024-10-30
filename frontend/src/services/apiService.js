@@ -1,11 +1,20 @@
-const API_URL = "http://localhost:5001/api";
+const API_URL = "https://yoliday-task.onrender.com/api";
 
 const apiService = {
   getProjects: async () => {
-    const response = await fetch(`${API_URL}/project`);
-    if (!response.ok) throw new Error("Failed to fetch project data");
-    return await response.json();
+    try {
+      const response = await fetch(`${API_URL}/project`);
+      if (!response.ok)
+        throw new Error(
+          `Failed to fetch project data: ${response.status} ${response.statusText}`
+        );
+      return await response.json();
+    } catch (error) {
+      console.error("Error in getProjects:", error);
+      return [];
+    }
   },
+
   getSaved: async () => {
     const response = await fetch(`${API_URL}/saved`);
     if (!response.ok) throw new Error("Failed to fetch saved data");
